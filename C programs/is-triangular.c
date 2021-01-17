@@ -22,3 +22,5 @@ int main()
      }
      return(0);
 }
+
+//code to check if command-line argument is triangular
