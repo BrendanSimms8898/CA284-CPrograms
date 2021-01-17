@@ -15,3 +15,5 @@ int main(int argc, char * argv[]) {
    }
    return (0);
 }
+
+//code for a hailstone sequence on a command-line argument
