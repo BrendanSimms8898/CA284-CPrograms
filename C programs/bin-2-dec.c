@@ -1,29 +1,25 @@
-#include<stdio.h>
-#include<math.h>
-#include <stdlib.h>
+#include <math.h>
+#include <stdio.h>
 
-int conversion(int argc, char *argv[]) {
-	int i;
-	int result = 0;
-	for(i=0;argv[1][i]!='\0'; i++)
-	{
-		if (argv[1][i]=='1')
-			result=result *2+1;
-		else
-			result=result *2;
-	}
+int main() {
+    int n;
+    printf("Enter a binary number: ");
+    scanf("%8d", &n); /* limits entry to 8 digits */
+    printf("%d\n",convert(n));
 
-	return result;
+return 0;
 }
-int main(int argc, char *argv[]) {
-	int x;
-	int result;
-    for(x=0;argv[1][x]!=0 && argv[1][x]>8; x++)
-    {
-    	if (argv[1][x]!='1' || argv[1][x]!='0')
-    		printf ("Only digits 1 and 0 are permitted.\n");
-    	else
-    		printf ("%d\n",result);
+
+/* Function to convert binary to decimal equivalent*/
+int convert(n) {
+    int decimal = 0, i = 0, rem;
+    while (n != 0) {
+        rem = n % 10;
+        n /= 10;
+        decimal += rem * pow(2, i);
+        ++i;
     }
-    return 0;
+    return decimal;
 }
+
+//Program to convert binary digit of > 8 digits to decimal
