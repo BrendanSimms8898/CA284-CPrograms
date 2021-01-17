@@ -9,3 +9,5 @@ main()
 		;
 	printf("%.0f\n", nc);
 }
+
+//basic code to count numbers created at start of module
