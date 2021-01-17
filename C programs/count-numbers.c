@@ -50,3 +50,5 @@ int main() {
 
   return 0;
 }
+
+//basic code to display counting numbers functions can be incorporated with ArrayGeneration function used in Sorting algorithim project
