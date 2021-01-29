@@ -34,3 +34,5 @@ int main(int argc, char * argv[]) {
    }
    return (0);
 }
+
+/* C program to compare three numbers taken from command-line and print which is the largest. */
